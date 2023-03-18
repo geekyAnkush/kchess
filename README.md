@@ -2,14 +2,15 @@
 
 > ❗ This project is still in the early stages of development and should be considered unstable. Expect bugs and weird behavior.
 
-Yet another Chess web app.
+Chess DAPP.
 
 - play against other users in real-time
+- Store games archive on blockchain
 - spectate and chat in ongoing games with other users
 - ~~_optional_ user accounts for tracking stats and game history~~ (wip)
 - mobile-friendly (wip)
 
-Built with Next.js 13, Tailwind CSS + daisyUI, react-chessboard, chess.js, Express.js, socket.io and PostgreSQL.
+Built with Next.js 13, Tailwind CSS + daisyUI,chess.js,Gun Js, Express.js, socket.io and PostgreSQL.
 
 ## Configuration
 
