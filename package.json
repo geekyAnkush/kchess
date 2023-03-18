@@ -1,0 +1,28 @@
+{
+    "name": "kchess",
+    "private": "true",
+    "author": "ankush",
+    "license": "MIT",
+    "workspaces": [
+        "client",
+        "server",
+        "types"
+    ],
+    "scripts": {
+        "dev": "concurrently \"npm run dev -w client\" \"npm run dev -w server\"",
+        "lint": "eslint .",
+        "lint:fix": "eslint --fix .",
+        "format": "prettier --write ."
+    },
+    "devDependencies": {
+        "concurrently": "^7.6.0",
+        "eslint": "^8.36.0",
+        "eslint-config-next": "13.2.4",
+        "eslint-config-prettier": "^8.7.0",
+        "prettier": "^2.8.4",
+        "prettier-plugin-tailwindcss": "^0.2.4"
+    },
+    "engines": {
+        "node": ">=18"
+    }
+}

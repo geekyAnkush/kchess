@@ -1,0 +1,432 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600&display=swap");
+@tailwind base;
+
+* {
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+  width: 4px;
+}
+
+*::-webkit-scrollbar-thumb {
+  @apply bg-slate-500;
+  border-radius: 2px;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: rubik;
+}
+
+/*  navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+.logo svg {
+  width: 37px;
+  height: 75px;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav li {
+  list-style: none;
+  margin: 0px 22px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+.rec {
+  width: 0px;
+  height: 0px;
+  background-color: #fff;
+  margin-top: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.rec2 {
+  width: 0px;
+  height: 0px;
+  background-color: #fff;
+  margin-top: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.rec3 {
+  width: 0px;
+  height: 0px;
+  background-color: #fff;
+  margin-top: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.rec4 {
+  width: 0px;
+  height: 0px;
+  background-color: #fff;
+  margin-top: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.rec5 {
+  width: 0px;
+  height: 0px;
+  background-color: #fff;
+  margin-top: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.nav li:hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav li:hover .rec {
+  width: 40px;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 5px;
+}
+.nav li:hover .rec2 {
+  width: 52px;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 5px;
+}
+.nav li:hover .rec3 {
+  width: 52px;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 5px;
+}
+.nav li:hover .rec4 {
+  width: 60px;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 5px;
+}
+.nav li:hover .rec5 {
+  width: 70px;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 5px;
+}
+
+.signin button {
+  background-color: #614bef;
+  padding: 10px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.signin button:hover {
+  filter: brightness(80%);
+}
+
+.dropdown {
+  display: none;
+}
+
+/* Home */
+
+.mainBox {
+  padding: 35px 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.box12 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box1 {
+  height: 500px;
+  width: 340px;
+  background-color: white;
+  margin: 0 10px;
+  background: url("/assets/live_13cad67048.jpeg");
+  background-repeat: no-repeat;
+  background-size: 340px 500px;
+  padding: 40px 50px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.box1 h2 {
+  font-weight: 500;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.box2 {
+  height: 500px;
+  width: 340px;
+  background-color: white;
+  margin: 0 10px;
+  background: url("/assets/maxime_vid_001_694c7877e3.jpeg");
+  background-repeat: no-repeat;
+  background-size: 340px 500px;
+  padding: 40px 50px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.box2 h2 {
+  font-weight: 500;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+.box3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box31 {
+  height: 130px;
+  width: 265px;
+  background-color: white;
+  margin: 10px 0px 10px 0px;
+
+  background: url("/assets/play_vs_computer_e63624b333.png");
+  background-repeat: no-repeat;
+  background-size: 265px 320px;
+  background-position: 0px -110px;
+  padding: 20px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.box31 h2 {
+  font-weight: 500;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+.box32 {
+  height: 130px;
+  width: 265px;
+  background-color: white;
+  margin: 10px 0px 10px 0px;
+  background: url("/assets/knight_badge_05c9510ee0.png");
+  background-repeat: no-repeat;
+  background-size: 265px 320px;
+  background-position: 0px -120px;
+  padding: 20px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.box32 h2 {
+  font-weight: 500;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.box33 {
+  height: 350px;
+  width: 550px;
+  background-color: white;
+  margin: 14px 0px 10px 0px;
+  background: url("/assets/Levon_2_Today_3284b18601.jpeg");
+  background-repeat: no-repeat;
+  background-size: 550px 350px;
+  padding: 30px 40px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.box33 h2 {
+  font-weight: 500;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+/* media quries */
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 20px 40px;
+  }
+  .nav {
+    display: none;
+  }
+
+  .logo svg {
+    width: 22px;
+    height: 45px;
+  }
+  .signin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .signin button {
+    font-weight: 600;
+    font-size: 11px;
+  }
+  .dropdown {
+    display: block;
+    margin: 0px 0px 0px 25px;
+  }
+  .dropdown svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .mainBox {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 90vh;
+  }
+  .box12 {
+    display: flex;
+    flex-direction: column;
+  }
+  .box3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .box31 {
+    height: 130px;
+    width: 340px;
+    background-color: white;
+    background: url("/assets/play_vs_computer_e63624b333.png");
+    background-repeat: no-repeat;
+    background-size: 340px 460px;
+    background-position: 0px -150px;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 10px;
+  }
+  .box32 {
+    height: 130px;
+    width: 340px;
+    background-color: white;
+    margin: 10px 0px 10px 0px;
+    background: url("/assets/knight_badge_05c9510ee0.png");
+    background-repeat: no-repeat;
+    background-size: 340px 460px;
+    background-position: 0px -170px;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .box33 {
+    height: 350px;
+    width: 340px;
+    background-color: white;
+    margin: 14px 0px 10px 0px;
+    background: url("/assets/Levon_2_Today_3284b18601.jpeg");
+    background-repeat: no-repeat;
+    background-size: 700px 350px;
+    padding: 30px 40px;
+    border: none;
+    border-radius: 10px;
+  }
+}
+
+.bgGradient {
+  background-image: "linear-gradient(
+    to right top,
+    #23126e,
+    #17145e,
+    #0f134e,
+    #0a123d,
+    #0b0d2d,
+    #0d0e2e,
+    #10102f,
+    #121130,
+    #1e1542,
+    #2f1754,
+    #431563,
+    #5b0c71
+  );";
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .mainBox {
+    display: flex;
+    flex-direction: column;
+  }
+  .box3 {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+  }
+  .box31 {
+    height: 130px;
+    width: 340px;
+    background-color: white;
+    background: url("/assets/play_vs_computer_e63624b333.png");
+    background-repeat: no-repeat;
+    background-size: 340px 460px;
+    background-position: 0px -150px;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 10px;
+  }
+  .box32 {
+    height: 130px;
+    width: 340px;
+    background-color: white;
+    margin: 10px 0px 10px 0px;
+    background: url("/assets/knight_badge_05c9510ee0.png");
+    background-repeat: no-repeat;
+    background-size: 340px 460px;
+    background-position: 0px -170px;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .box33 {
+    height: 350px;
+    width: 700px;
+    background-color: white;
+    margin: 14px 0px 10px 0px;
+    background: url("/assets/Levon_2_Today_3284b18601.jpeg");
+    background-repeat: no-repeat;
+    background-size: 700px 350px;
+    padding: 30px 40px;
+    border: none;
+    border-radius: 10px;
+  }
+}
+
+/*  */
